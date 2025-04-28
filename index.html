@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ribeiro Outfit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <header>
+    <img src="img/logo.jpg" alt="Logo" class="logo" />
+    <h1>Ribeiro Outfit</h1>
+    <p>Loja de roupas masculinas</p>
+  </header>
+
+  <main>
+    <a href="https://wa.me/5538988079211?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." class="btn-whatsapp">
+      Fazer pedido via WhatsApp
+    </a>
+
+    <button id="btn-info">Informações da Loja</button>
+
+    <section id="info" class="hidden">
+      <p><strong>A CASA DAS PERUANAS</strong></p>
+      <p>Desde 2022</p>
+      <p>📍 Av. Montes Claros, 171 - Nova Esperança</p>
+      <p>🕘 Terça a Sexta: 09:00 - 21:00</p>
+      <p>🕘 Sábado: 09:00 - 19:00</p>
+      <p>🕘 Domingo: 09:00 - 13:00</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Formas de pagamento:</p>
+    <div class="pagamentos">
+      <div class="forma">
+        <span>Dinheiro</span>
+        <img src="img/dinheiro.png" alt="Dinheiro" />
+      </div>
+      <div class="forma">
+        <span>Pix</span>
+        <img src="img/pix.png" alt="Pix" />
+      </div>
+      <div class="forma">
+        <span>Crédito</span>
+        <img src="img/cartao-credito.png" alt="Crédito" />
+      </div>
+      <div class="forma">
+        <span>Débito</span>
+        <img src="img/cartao-debito.png" alt="Débito" />
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById("btn-info");
+    const info = document.getElementById("info");
+    btn.addEventListener("click", () => {
+      info.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
